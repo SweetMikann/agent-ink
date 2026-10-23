@@ -63,6 +63,26 @@ registerInkRoutes(app, { isAuthorized: req => req.get('authorization') === 'Bear
 
 如果你的消息走队列，`inkQueue(store, vault, { reader })` 可以把队列包一层：入队时就封好，取出来给小机的永远是封过的版本，原始记录不动。
 
+## 人那边：会变成沙的气泡（React）
+
+小机擦墨水是一半，另一半在你自己的屏幕上：藏起来的字变成一团慢慢浮动的沙，手指划过哪儿哪儿就散开，五秒后自己盖回去。就是上面截图里那团。
+
+`web/` 里三个文件，直接拷进你的 React 项目：
+
+```tsx
+import { InkMessage } from './web/inkText'
+
+// 纯文字消息：有 ||…|| 就自动套上墨水，没有就原样显示
+<InkMessage text={message.content} dustColor="#d9e8e7" />
+```
+
+已经自己渲染好了富文本？用 `splitSecrets()` 把字包成 `<span class="ink-secret">`，外面套一层 `<InvisibleInk>`；`all` 设成 `true` 就整条都盖。
+
+- 只有在屏幕里的气泡才画，几百条消息也不会一起烧手机；屏幕外的连画布都藏起来。
+- 每条消息的沙粒有上限，长消息自动稀释，短消息密度不变。
+- 键盘也能用：左右方向键选字，空格切换，Esc 全部盖回。系统开了「减弱动态效果」时，沙子会动得慢一些。
+- 需要浏览器支持 CSS `mask-image` 和 `Intl.Segmenter`（iOS 16.4+ / 近两年的 Chrome、Firefox 都行）。
+
 ## 几个小约定
 
 - `scope` 决定同一句话会不会拿到同一个编号：同一条消息重复投递，编号不变；换一条消息，就是新墨水。

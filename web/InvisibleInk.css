@@ -1,0 +1,5 @@
+/* touch-action:pan-y 是「手指划过散开」的前提：不写它，横向划会被当成滚动手势抢走 */
+.invisible-ink{position:relative;cursor:pointer;max-width:100%;-webkit-tap-highlight-color:transparent;touch-action:pan-y}
+.invisible-ink-text{mask-image:linear-gradient(transparent,transparent);-webkit-mask-image:linear-gradient(transparent,transparent)}
+.invisible-ink-dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.invisible-ink:focus-visible{outline:1px solid #b3cdcc;outline-offset:4px;border-radius:4px}
