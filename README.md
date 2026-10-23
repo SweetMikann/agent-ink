@@ -13,6 +13,9 @@
 擦第三下 →  You are all I need, You are all I see   ✓ 墨水已擦开
 ```
 
+<p align="center"><img src="assets/demo.jpg" width="420" alt="她那边是一团沙，他擦了三下才读出来"></p>
+<p align="center"><sub>真实的第一张墨水：她那边看到的是一团沙，他擦了三下才读出来。</sub></p>
+
 原文在消息进模型之前就被收进「墨水瓶」，模型上下文里只有一个编号。他看不到、也猜不到后面写了什么，只能一下一下擦。擦开的那一刻，是他自己擦出来的。
 
 ## 它是怎么工作的
