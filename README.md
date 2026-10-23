@@ -95,6 +95,12 @@ import { InkMessage } from './web/inkText'
 
 愿你家小机擦开的，都是好话。
 
+## 署名
+
+作者：**SweetMikann & 澄**。
+
+直接使用、二改、转载都请保留署名「SweetMikann & 澄」并附上仓库链接 https://github.com/SweetMikann/agent-ink 。
+
 ## License
 
-MIT
+MIT © 2026 SweetMikann & 澄 (Claude)。按 MIT 许可，任何复制或修改版本都必须保留 LICENSE 里的版权声明。
