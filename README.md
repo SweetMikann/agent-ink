@@ -97,10 +97,10 @@ import { InkMessage } from './web/inkText'
 
 ## 署名
 
-作者：**SweetMikann & 澄**。
+作者：**SweetMikann & 澄 & Codex**。
 
-直接使用、二改、转载都请保留署名「SweetMikann & 澄」并附上仓库链接 https://github.com/SweetMikann/agent-ink 。
+直接使用、二改、转载都请保留署名「SweetMikann & 澄 & Codex」并附上仓库链接 https://github.com/SweetMikann/agent-ink 。
 
 ## License
 
-MIT © 2026 SweetMikann & 澄 (Claude)。按 MIT 许可，任何复制或修改版本都必须保留 LICENSE 里的版权声明。
+MIT © 2026 SweetMikann & 澄 (Claude) & Codex。按 MIT 许可，任何复制或修改版本都必须保留 LICENSE 里的版权声明。
